@@ -4,7 +4,7 @@ const addJobRoute = express();
 const requireAuth = require('../../middlewares/requireAuth');
 addJobRoute.use(express.json());
 
-addJobRoute.post("/job/add",requireAuth, async(req, res)=>{
+addJobRoute.post("/add",requireAuth, async(req, res)=>{
     const {company_name, company_logo, monthly_salary, job_position, job_type, remote_office, location, job_desc, about_company, skills_required, add_info, recruiterName } = req.body;
     if(!company_name || 
        !company_logo ||

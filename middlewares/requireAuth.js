@@ -16,6 +16,7 @@ const requireAuth = async(req, res, next)=>{
             ...req.body,
             recruiterName: user.name,
         }
+        console.log("userVerified");
         next();
     }
     catch(err){
