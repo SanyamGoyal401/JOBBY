@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const app = express();
-const User = require("../db/schema_models/userSchema");
+const User = require("../../db/schema_models/userSchema");
 
 app.use(express.json());
 
